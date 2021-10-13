@@ -31,7 +31,7 @@ else:
     bulletsleep = 0.5
     linesleep = 0.3
 
-for i in range(10):
+for _ in range(10):
     winsound.Beep(frequency, duration)
 
 if not test:
@@ -66,7 +66,7 @@ for row in data:
 
         mousefuncs.moveRelative(pixelspacing, 0)
         time.sleep(bulletsleep)
-        
+
     if win32api.GetKeyState(0x04) < 0:
         print('cancel')
         break
